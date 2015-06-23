@@ -2259,6 +2259,9 @@ body {
 .left {
   float: left;
 }
+ul.left {
+  width: 70%;
+}
 
 /* line 99, source/template/_theme.scss */
 .right {
@@ -2532,6 +2535,7 @@ body {
 /* line 92, source/gdi-sass.scss */
 .reveal section img {
   margin: 0 15px;
+  width: 200px;
 }
 /* line 96, source/gdi-sass.scss */
 .reveal .img--bare {
