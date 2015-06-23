@@ -92,14 +92,14 @@
           <section>
             <h2>Alex Vasquez</h2>
 
-            <p class="box"><small><a href="http://juliecameron.com" target="_blank">JulieCameron.com</a> &nbsp; | &nbsp; <a href="http://twitter.com/jewlofthelotus" target="_blank">@JewlOfTheLotus</a> &nbsp; | &nbsp; <a href="mailto:jewlofthelotus@gmail.com">jewlofthelotus@gmail.com</a></small></p>
+            <p class="box"><small><a href="http://alexhasnicehair.com" target="_blank">alexhasnicehair.com</a> &nbsp; | &nbsp; <a href="http://twitter.com/alexjvasquez" target="_blank">@alexjvasquez</a> &nbsp; | &nbsp; <a href="mailto:alexjvas@gmail.com">alexjvas@gmail.com</a></small></p>
 
             <div class="right">
-              <img src="images/julie.jpg" />
+              <img src="images/alex.png" />
             </div>
 
             <ul class="left">
-              <li><strong>Principal & Developer</strong> at <a href="http://digisavvy.com" target="_blank">DigiSavvy, inc.</a></li>
+              <li><strong>Principal</strong> at <a href="http://digisavvy.com" target="_blank">DigiSavvy, inc.</a></li>
               <li><strong>Lead Organizer</strong> for <a href="http://la.wordcamp.org/2015" target="_blank">WordCamp Los Angeles</a></li>
               <li><strong>Sassy CSS</strong> Fan</li>
               <li><strong>Soup Dumpling</strong> Proponent</li>
@@ -3051,7 +3051,7 @@
           <!-- Advanced Sass : Inheritance : Placeholders -->
           <section>
             <h3><span class="blue">Inheritance</span> Placeholders</h3>
-            <p class="box copy--small"><strong>Placeholders</strong> are a special type of selector denoted by a <code>%</code>. They can be <code>@extend</code>ed but will never compile to the CSS on their own.</p>
+            <p class="box copy--small"><strong>Placeholders</strong> are a special type of selector denoted by a <code>%</code>. They can be <code>@extend</code>ed but will never compile to the CSS on their own. <strong></strong>  </p>
             <div class="left" style="width: 48%">
               <h4 class="yellow">Sass</h4>
               <pre><code>
@@ -3112,6 +3112,16 @@
             </aside>
           </section>
 
+          <section>
+            <h3><span class="blue">Placeholders or Mixins? </span><br>Which to use?</h3>
+            <p>
+              The best advice would be: <strong>if you need variables, use a mixin.</strong> Otherwise, extend a placeholder. <br>There are two reasons for this:<br>
+              <ul>
+                <li>First, you can’t use variables in a placeholder. Actually you can but you cannot pass variables to your placeholders so you can’t generate context-specific CSS like you would do with a mixin.</li><br>
+                <li>Second, the way Sass handles mixins makes them very inconvenient when you don’t use them with contextual variables. To put it simply: Sass will duplicate the output of the mixin every time you use it, resulting not only in duplicated CSS but also a bigger stylesheet.</li>
+              </ul>
+            </p>
+          </section>
           <!-- Advanced Sass : Inheritance : Develop It! -->
           <section>
             <h3>@extend <span class="yellow">Let's develop it!</span></h3>
